@@ -15,6 +15,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/raffle', 'RaffleController@index');
+Route::get('/list', 'RaffleController@list');
+Route::get('/selected', 'RaffleController@selected');
+Route::get('/restart', 'RaffleController@restart');
+
+Route::post('/raffle', 'RaffleController@store');
+Route::post('/roll', 'RaffleController@select');
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

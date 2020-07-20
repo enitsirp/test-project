@@ -21,6 +21,7 @@ Vue.use(require('bootstrap-vue'));
 
 Vue.component('note-component', require('./components/NoteComponent.vue').default);
 Vue.component('user-component', require('./components/UserComponent.vue').default);
+Vue.component('raffle-component', require('./components/RaffleComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
